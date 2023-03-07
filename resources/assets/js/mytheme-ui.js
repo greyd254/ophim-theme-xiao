@@ -484,7 +484,7 @@ var MyTheme = {
                 var len = 0;
                 var canadd = true;
                 if (history) {
-                    history = eval("(" + history + ")");
+                    history = JSON.parse(history);
                     len = history.length;
                     $(history).each(function () {
                         if (name == this.name) {
